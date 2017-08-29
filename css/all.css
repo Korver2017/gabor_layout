@@ -1,0 +1,260 @@
+@import url(//fonts.googleapis.com/earlyaccess/notosanstc.css);
+/*CSS RESET*/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+.clearfix {
+	clear: both;
+}
+* {
+	box-sizing: border-box;
+}
+/*CSS RESET END*/
+body {
+	font-family: 'Noto Sans TC', sans-serif;
+}
+p {
+	font-size: 20px;
+	color: #fff;
+	margin-left: 25px;
+	margin-top: 20px;
+	text-shadow: 2px 2px rgba(0,0,0,.5);
+}
+h1 {
+	float: left;
+	line-height: 60px;
+	width: 33.33333%;
+	text-align: center;
+	color: #fff;
+}
+h2 {
+	font-size: 40px;
+	float: left;
+	margin-top: 20px;
+	margin-left: 25px;
+	color: #fff;
+	text-shadow: 2px 2px rgba(0,0,0,.5);
+}
+.wrap::before {
+	width: 512px;
+	content: '';
+	display: block;
+	height: 190vh;
+	background-image: url(../img/cloud.jpg);
+	background-position: -350px -500px;
+	position: absolute;
+	z-index: -1;
+	opacity: .5;
+}
+.wrap {
+	position: relative;
+	width: 512px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+.header > p {
+	margin-top: 15px;
+	margin-bottom: 40px;
+}
+.bar {
+	background-image: linear-gradient(45deg, #5FB6DE 0%, #38039A 50%);
+}
+.arrow {
+	font-size: 30px;
+	color: #fff;
+	margin-left: 2%;
+	width: 31.33333%;
+	float: left;
+	line-height: 60px;
+	font-weight: 700;
+}
+.search {
+	color: #fff;
+	margin-right: 3%;
+	text-align: right;
+	width: 30.33333%;
+	float: left;
+	line-height: 60px;
+}
+.star {
+	float: left;
+	font-size: 40px;
+	margin-top: 20px;
+	margin-left: 25px;
+	color: #fff;
+}
+.marker {
+	float: left;
+	font-size: 40px;
+	margin-top: 20px;
+	margin-left: 25px;
+	color: #fff;
+}
+.info {
+	margin-top: 120px;
+}
+.cloudy {
+	width: 40px;
+	margin-left: 25px;
+	float: left;
+	vertical-align: top;
+}
+.info > p {
+	float: left;
+	margin: 0;
+	line-height: 40px;
+	margin-top: 5px;
+}
+.hot, .cool {
+	color: #fff;
+	margin-left: 38px;
+}
+.fa-long-arrow-up, .fa-long-arrow-down {
+	float: left;
+	text-shadow: 2px 2px rgba(0,0,0,.8);
+}
+.hot > p, .cool > p {
+	float: left;
+	margin: 0;
+	margin-left: 20px;
+	margin-right: 30px;
+}
+.figure {
+	float: left;
+	font-size: 100px;
+	margin: 25px 0;
+	margin-left: 25px;
+	font-weight: lighter;
+	color: #fff;
+	text-shadow: 2px 2px rgba(0,0,0,.8);
+}
+.unit {
+	float: left;
+	margin-top: 30px;
+}
+.unit p {
+	font-size: 25px;
+}
+.unit p:last-child{
+	color: #ABABAB;
+}
+.main {
+	padding-top: 10px;
+	margin-left: 2.5%;
+	margin-bottom: 50px;
+	width: 95%;
+	background-color: rgba(0,0,0,.7);
+}
+.main p {
+	margin-left: 15px;
+	text-shadow: none;
+}
+hr {
+	width: 95%;
+}
+.input {
+	width: 120px;
+	padding: 10px;
+	background-color: #fff;
+	border-radius: 4px;
+	border-color: #E1E1E1;
+}
+.hourInfo {
+	background: linear-gradient(to right, rgba(0,0,0,0), rgba(0,0,0,0) 80%, rgba(0,0,0,.6));
+}
+.hourInfo, .dayList {
+	width: 95%;
+	margin: 0 auto;
+	padding-bottom: 10px;
+	border-bottom: 1px dotted #757575;
+}
+.set {
+	float: left;
+	width: 12.5%;
+}
+.set p {
+	text-align: center;
+	font-size: 14px;
+	margin-left: 0;
+}
+.set img {
+	width: 40px;
+	margin-left: 10px;
+}
+.set p:last-child{
+	margin-top: 0px;
+}
+.dayInfo p {
+	float: left;
+}
+.dayInfo img {
+	float: left;
+	width: 30px;
+	margin-top: 15px;
+	margin-left: 70px;
+	margin-right: -10px;
+}
+.dayInfo img:nth-child(2) {
+	width: 40px;
+	margin-top: 8px;
+}
+.dayList:nth-child(1) .dayHot, .dayList:nth-child(2) .dayHot {
+	margin-left: 70px;
+}
+.dayInfo .dayHot {
+	margin-left: 60px;
+}
+.dayInfo .dayCool {
+	color: #90A9FF;
+}
+.dayCount {
+	padding-bottom: 20px;
+}
+.dayCount p:nth-child(1), .dayCount p:nth-child(2) {
+	color: #757575;
+}
